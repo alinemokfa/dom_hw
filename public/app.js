@@ -1,6 +1,15 @@
+const cats_array = [
+  { name: "Cat1", favouriteFood: "Strawberry", image: "https://www.petmd.com/sites/default/files/petmd-cat-happy-10.jpg"},
+  { name: "Cat2", favouriteFood: "Banana", image: "https://1.bp.blogspot.com/_9AVkl8VqlSk/S-v56P1XEMI/AAAAAAAAANQ/UiSXJ3_OcWM/s1600/getty_rm_photo_of_cat_staring_close_up.jpg" },
+  { name: "Cat3", favouriteFood: "Peach", image: "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg" }
+];
+
 const app = function () {
 
-  addCat("Cat", "Favourite Food", "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg")
+  for(let cat of cats_array){
+    addCat(cat.name, cat.favouriteFood, cat.image);
+  }
+
   // const catList = document.createElement('ul');
   // catList.classList.add('cat');
   //
